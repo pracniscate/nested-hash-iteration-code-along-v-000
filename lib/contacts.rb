@@ -19,6 +19,10 @@ def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
     # 2: iterate over the second level
     contact_details_hash.each do |attribute, data|
-    binding.pry
+      # 3: locate the element we're looking for
+      if attribute == :favorite_ice_cream_flavors
+        binding.pry
+      end
+    end
   end
 end
