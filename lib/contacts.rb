@@ -21,7 +21,8 @@ def remove_strawberry(contacts)
     contact_details_hash.each do |attribute, data|
       # 3: locate the element we're looking for
       if attribute == :favorite_ice_cream_flavors
-        binding.pry
+        # 4: update the hash
+        data.delete_if {|ice_cream| ice_cream == "strawberry"}
       end
     end
   end
